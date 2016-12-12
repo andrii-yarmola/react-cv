@@ -6,7 +6,7 @@ const Main = React.createClass({
 		return (
 			<div>
 				<h1>
-					<Link to="/">Reduxstagram</Link>
+					<Link to="/">Hello and Welcome to My Single-Page App</Link>
 				</h1>
 				<div id="wrapper">
 					<div className="home-holder">
@@ -26,7 +26,17 @@ const Main = React.createClass({
 									<button className="arrow a-right">
 										<i className="fa fa-angle-right" aria-hidden="true"></i>
 									</button>
-									<img src={'images/img1.jpg'} alt="image description"/>
+									
+									<div className="cube">
+										<div className="face n1 medium">
+											<a href="#" class="link">
+												<span class="img-holder">
+												</span>
+												<strong class="glitch" title="About me / contacts">About me / contacts</strong>
+											</a>
+										</div>
+									</div>
+									
 								</div>
 							</div>
 						</div>
