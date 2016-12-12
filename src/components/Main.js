@@ -8,6 +8,7 @@ const Main = React.createClass({
 				<h1>
 					<Link to="/">Hello and Welcome to My Single-Page App</Link>
 				</h1>
+				<img src={'images/img2.jpg'} alt="image description"/>
 				<div id="wrapper">
 					<div className="home-holder">
 						<div className="container">
