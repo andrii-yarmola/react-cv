@@ -41,7 +41,7 @@ $media-expressions: (
 }
 
 #main{
-	min-height: calc(100vh - 110px);
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 }
