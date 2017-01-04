@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
+// Import common JS
+import scrollPlugin from 'scrollPlugin';
 
-const About = React.createClass({
+class About extends React.Component {
+	componentDidMount() {
+		// scrollPlugin();
+	}
 	render() {
 		return (
 			<div>
@@ -9,6 +14,6 @@ const About = React.createClass({
 			</div>
 		)
 	}
-});
+};
 
 export default About;

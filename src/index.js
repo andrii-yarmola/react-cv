@@ -2,11 +2,8 @@ import React from 'react';
 
 import { render } from 'react-dom';
 
-// Import common JS
-require('./common/scrollPlugin');
-
 // Import css
-require('../styles/index.scss');
+import styles from '../styles/index.scss';
 
 // Import Components
 import App from './components/App';

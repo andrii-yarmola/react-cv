@@ -25,6 +25,7 @@ module.exports = {
     }]
   },
   resolve: {
+    modulesDirectories: ["web_modules", "node_modules", './src/common'],
     extensions: ['', '.js', '.jsx']
   },
   devtool: 'cheap-inline-module-source-map',
