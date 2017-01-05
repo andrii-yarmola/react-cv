@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import SingleTaskOptions from './SingleTaskOptions';
 
 const SingleTask = React.createClass({
 	render() {
@@ -15,38 +16,7 @@ const SingleTask = React.createClass({
 							</span>
 							<span className="options-holder">
 								<ul className="options-list">
-									<li>
-										<i className="fa fa-html5" aria-hidden="true"></i>
-										HTML5/CSS3
-									</li>
-									<li>
-										<i className="fa fa-expand" aria-hidden="true"></i>
-										Responsive Look
-									</li>
-									<li>
-										<i className="fa fa-apple" aria-hidden="true"></i>
-										Retina support
-									</li>
-									<li>
-										<i className="fa fa-css3" aria-hidden="true"></i>
-										CSS animation
-									</li>
-									<li>
-										<i className="fa fa-cogs" aria-hidden="true"></i>
-										jQuery default plugins
-									</li>
-									<li>
-										<i className="fa fa-cogs" aria-hidden="true"></i>
-										Custom JS
-									</li>
-									<li>
-										<i className="fa fa-cogs" aria-hidden="true"></i>
-										Twitter Bootstrap
-									</li>
-									<li>
-										<i className="fa fa-wordpress" aria-hidden="true"></i>
-										WordPress
-									</li>
+									{task.options_list.map((opt, i) => <SingleTaskOptions {...this.props} key={i} i={i} opt={opt} />)}
 								</ul>
 							</span>
 						</a>
