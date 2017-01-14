@@ -9,15 +9,27 @@ const SingleTask = React.createClass({
 			<div className="col">
 				<div className="box shape">
 					<div className="front face">
-						<a className="link" href="#">
+						<a className="link" href={task.url} target="_blank">
 							<strong className="title ellipsis">{task.title}</strong>
 							<span className="img-holder">
 								<img src={task.image_url} alt="image description"/>
 							</span>
 							<span className="options-holder">
-								<ul className="options-list">
-									{task.options_list.map((opt, i) => <SingleTaskOptions {...this.props} key={i} i={i} opt={opt} />)}
-								</ul>
+								{
+									task.options_list ?
+									<ul className="options-list">
+										{task.options_list.map((opt, i) => <SingleTaskOptions {...this.props} key={i} i={i} opt={opt} />)}
+									</ul>
+									: ''
+								}
+								{
+									task.description ?
+									<span className="description">
+										{task.description}
+										<span className="more">Read more...</span>
+									</span>
+									: ''
+								}
 							</span>
 						</a>
 					</div>

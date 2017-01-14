@@ -2,97 +2,58 @@ const commercyTasks = [
    {
       "title":"pressboardmedia.com",
       "url":"http://www.pressboardmedia.com/",
-      "image_url":"images/img5.jpg",
-      "id":"1161022966406956503",
+      "image_url":"images/press.jpg",
+      "id":"11610229",
       "options_list": [
-         "html5_css3",
+         "html-five",
          "responsive",
-         "retina",
-         "animation",
+         "css3",
          "jquery",
-         "custom_js",
-         "tb",
-         "wp"
+         "custom-js",
+         "bootstrap",
+         "wordpress"
       ]
    },
    {
-      "title":"pressboardmedia.com",
-      "url":"http://www.pressboardmedia.com/",
-      "image_url":"images/img5.jpg",
-      "id":"1161022966406956503",
+      "title":"Giftster.com",
+      "url":"https://www.giftster.com/",
+      "image_url":"images/gif.jpg",
+      "id":"11610230",
       "options_list": [
-         "html5_css3",
+         "html-five",
          "responsive",
-         "retina",
-         "animation",
+         "css3",
          "jquery",
-         "custom_js",
-         "tb",
-         "wp"
+         "custom-js",
+         "wordpress"
       ]
    },
    {
-      "title":"pressboardmedia.com",
-      "url":"http://www.pressboardmedia.com/",
-      "image_url":"images/img5.jpg",
-      "id":"1161022966406956503",
-      "options_list": [
-         "html5_css3",
+      "title":"veininstitutenj.com",
+      "url":"http://veininstitutenj.com/",
+      "image_url":"images/vein.jpg",
+      "id":"11610231",
+       "options_list": [
+         "html-five",
          "responsive",
-         "retina",
-         "animation",
          "jquery",
-         "custom_js",
-         "tb",
-         "wp"
+         "wordpress",
+         "microformat",
+         "print"
       ]
    },
    {
-      "title":"pressboardmedia.com",
-      "url":"http://www.pressboardmedia.com/",
-      "image_url":"images/img5.jpg",
-      "id":"1161022966406956503",
-      "options_list": [
-         "html5_css3",
+      "title":"eskawater.com",
+      "url":"http://www.eskawater.com/",
+      "image_url":"images/eska.jpg",
+      "id":"11610232",
+       "options_list": [
+         "html-five",
          "responsive",
-         "retina",
-         "animation",
+         "css3",
          "jquery",
-         "custom_js",
-         "tb",
-         "wp"
-      ]
-   },
-   {
-      "title":"pressboardmedia.com",
-      "url":"http://www.pressboardmedia.com/",
-      "image_url":"images/img5.jpg",
-      "id":"1161022966406956503",
-      "options_list": [
-         "html5_css3",
-         "responsive",
-         "retina",
-         "animation",
-         "jquery",
-         "custom_js",
-         "tb",
-         "wp"
-      ]
-   },
-   {
-      "title":"pressboardmedia.com",
-      "url":"http://www.pressboardmedia.com/",
-      "image_url":"images/img5.jpg",
-      "id":"1161022966406956503",
-      "options_list": [
-         "html5_css3",
-         "responsive",
-         "retina",
-         "animation",
-         "jquery",
-         "custom_js",
-         "tb",
-         "wp"
+         "custom-js",
+         "wordpress"
       ]
    }
 ];

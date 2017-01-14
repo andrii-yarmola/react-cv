@@ -4,43 +4,26 @@ import { Link } from 'react-router';
 const SingleTaskOptions = React.createClass({
 	render() {
 		const { opt, i } = this.props;
+		const optionCompliance = {
+			'html-five' : 'HTML5/CSS3',
+			'responsive' : 'Responsive Look',
+			'retina' : 'Retina support',
+			'css3' : 'CSS animation',
+			'jquery' : 'jQuery plugins',
+			'custom-js' : 'Custom JS',
+			'bootstrap' : 'Twitter Bootstrap',
+			'wordpress' : 'WordPress',
+			'print' : 'Print version',
+			'microformat' : 'Microformats'
+		}
 		return (
-			<div>
 			<li>
-				<i className="fa fa-html5" aria-hidden="true"></i>
-				HTML5/CSS3
+				<i className={`icon-${opt}`} aria-hidden="true"></i>
+				{optionCompliance[opt] ? optionCompliance[opt] : "EMPTY OPTION"}
 			</li>
-			<li>
-				<i className="fa fa-expand" aria-hidden="true"></i>
-				Responsive Look
-			</li>
-			<li>
-				<i className="fa fa-apple" aria-hidden="true"></i>
-				Retina support
-			</li>
-			<li>
-				<i className="fa fa-css3" aria-hidden="true"></i>
-				CSS animation
-			</li>
-			<li>
-				<i className="fa fa-cogs" aria-hidden="true"></i>
-				jQuery default plugins
-			</li>
-			<li>
-				<i className="fa fa-cogs" aria-hidden="true"></i>
-				Custom JS
-			</li>
-			<li>
-				<i className="fa fa-cogs" aria-hidden="true"></i>
-				Twitter Bootstrap
-			</li>
-			<li>
-				<i className="fa fa-wordpress" aria-hidden="true"></i>
-				WordPress
-			</li>
-			</div>
 		)
 	}
 });
 
 export default SingleTaskOptions;
+

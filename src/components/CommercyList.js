@@ -5,7 +5,7 @@ import SingleTask from './SingleTask';
 // Import common JS
 import scrollPlugin from 'scrollPlugin';
 
-class About extends React.Component {
+class CommercyList extends React.Component {
 	componentDidMount() {
 		scrollPlugin.attachEvents();
 	}
@@ -19,7 +19,7 @@ class About extends React.Component {
 					<div className="scene global-perspective" style={{perspective: 700, perspectiveOrigin: '50% 25%'}}>
 						<main id="main">
 							<div className="container">
-								<h1>My commercy tasks</h1>
+								<h1>A couple of my commercial tasks</h1>
 								<div className="row">
 									{this.props.commercyTasks.map((task, i) => <SingleTask {...this.props} key={i} i={i} task={task} />)}
 								</div>
@@ -32,4 +32,4 @@ class About extends React.Component {
 	}
 };
 
-export default About;
+export default CommercyList;
