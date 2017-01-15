@@ -35,8 +35,11 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 600px;
-	height: 400px;
+	width: 800px;
+	height: 600px;
 	border: 2px solid red;
-	z-index: 20;
+	max-width: 90%;
+	max-height: 90%;
+	background: $white;
+	z-index: 999;
 }

@@ -9,10 +9,13 @@ const SingleTask = React.createClass({
 			<div className="col">
 				<div className="box shape">
 					<div className="front face">
-						<a className="link" href={task.url} target="_blank">
+						<Link 
+						to = {task.url ? task.url : `/preview/${task.id}`}
+						className="link"
+						target ={task.url ? "_blank" : ''}>
 							<strong className="title ellipsis">{task.title}</strong>
 							<span className="img-holder">
-								<img src={task.image_url} alt="image description"/>
+								<img src={`static/${task.image_url}`} alt="image description"/>
 							</span>
 							<span className="options-holder">
 								{
@@ -31,7 +34,7 @@ const SingleTask = React.createClass({
 									: ''
 								}
 							</span>
-						</a>
+						</Link>
 					</div>
 					<div className="back face"></div>
 					<div className="top face"></div>

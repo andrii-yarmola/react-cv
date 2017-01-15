@@ -8,6 +8,7 @@ import styles from '../styles/index.scss';
 // Import Components
 import App from './components/App';
 import About from './components/About';
+import ReactTaskPreview from './components/ReactTaskPreview';
 import Home from './components/Home';
 import CommercyList from './components/CommercyList';
 import ReactList from './components/ReactList';
@@ -26,6 +27,7 @@ const router = (
         <Route path="/commercy-list" component={CommercyList}></Route>
         <Route path="/react-list" component={ReactList}></Route>
         <Route path="/about" component={About}></Route>
+        <Route path="/preview/:taskId" component={ReactTaskPreview}></Route>
       </Route>
     </Router>
   </Provider>

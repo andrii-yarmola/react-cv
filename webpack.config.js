@@ -1,3 +1,4 @@
+var path = require('path');
 var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -34,8 +35,8 @@ module.exports = {
   },
   devtool: 'cheap-inline-module-source-map',
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
+    path: path.join(__dirname, 'dist'),
+    publicPath: '/static/',
     filename: 'bundle.js'
   },
   devServer: {
