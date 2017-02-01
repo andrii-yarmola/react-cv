@@ -15,7 +15,7 @@ const SingleTask = React.createClass({
 						target ={task.url ? "_blank" : ''}>
 							<strong className="title ellipsis">{task.title}</strong>
 							<span className="img-holder">
-								<img src={`static/${task.image_url}`} alt="image description"/>
+								<img src={`${task.image_url}`} alt="image description"/>
 							</span>
 							<span className="options-holder">
 								{

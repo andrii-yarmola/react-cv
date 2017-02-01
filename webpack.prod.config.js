@@ -1,26 +1,38 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   entry: {
     main: './src/index.js'
   },
   resolve: {
+    modulesDirectories: ["web_modules", "node_modules", './src/common'],
     extensions: ['', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
+      test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: 'babel-loader'
+      loader: "babel-loader"
     },
     {
       test: /\.scss$/,
       loader: 'style!css!sass'
+    },
+    {
+      test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+      loader: 'file-loader'
+    },
+    {
+      test: /\.(jpe?g|png|gif|svg)$/,
+      loaders: [
+          'file?name=[path][name].[ext]'
+      ]
     }]
   },
   plugins: [

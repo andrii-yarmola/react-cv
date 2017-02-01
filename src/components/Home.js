@@ -24,7 +24,7 @@ const Main = React.createClass({
 										<div className="face n1 medium">
 											<Link to="/about" className="link">
 												<span className="img-holder">
-													<img src={'static/images/img4.jpg'} alt="image description"/>
+													<img src={'/images/img4.jpg'} alt="image description"/>
 												</span>
 												<strong className="glitch" data-title="About me / contacts">About me / contacts</strong>
 											</Link>
@@ -32,7 +32,7 @@ const Main = React.createClass({
 										<div className="face n2">
 											<Link to="/commercy-list" className="link">
 												<span className="img-holder">
-													<img src={'static/images/img1.png'} alt="image description"/>
+													<img src={'/images/img1.png'} alt="image description"/>
 												</span>
 												<strong className="glitch" data-title="Commercy works">Commercy works</strong>
 											</Link>
@@ -42,7 +42,7 @@ const Main = React.createClass({
 										<div className="face n5">
 											<Link to="/react-list" className="link">
 												<span className="img-holder">
-													<img src={'static/images/img3.jpg'} alt="image description"/>
+													<img src={'/images/img3.jpg'} alt="image description"/>
 												</span>
 												<strong className="glitch" data-title="React home tasks">React home tasks</strong>
 											</Link>

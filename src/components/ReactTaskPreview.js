@@ -20,12 +20,12 @@ class ReactTaskPreview extends React.Component {
 					<div className="scene global-perspective" style={{perspective: 700, perspectiveOrigin: '50% 25%'}}>
 						<main id="main">
 							<div className="container">
-								<h1> {task.title}</h1>
+								<h1> {task.title} </h1>
 								<div className="single-task-holder">
 									<div className="front face">
 										<div className="single-task">
 											<div className="img-holder">
-												<img src={`../static/${task.image_url}`} alt="image description"/>
+												<img src={`/${task.image_url}`} alt="image description"/>
 											</div>
 											<div className="text-holder">
 												<p>
@@ -51,7 +51,7 @@ class ReactTaskPreview extends React.Component {
 								</div>
 							</div>
 						</main>
-						<iframe className="demoframe" src={`../reactTasks/${task.id}/index.html`}></iframe>
+						<iframe className="demoframe" src={`/reactTasks/${task.id}/index.html`}></iframe>
 					</div>
 				</div>
 			</div>

@@ -36,7 +36,7 @@ module.exports = {
   devtool: 'cheap-inline-module-source-map',
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: '/static/',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {

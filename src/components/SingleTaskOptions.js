@@ -19,7 +19,7 @@ const SingleTaskOptions = React.createClass({
 		return (
 			<li>
 				<i className={`icon-${opt}`} aria-hidden="true"></i>
-				{optionCompliance[opt] ? optionCompliance[opt] : "EMPTY OPTION"}
+				{optionCompliance[opt] ? optionCompliance[opt] : "UNKNOWN OPTION"}
 			</li>
 		)
 	}
